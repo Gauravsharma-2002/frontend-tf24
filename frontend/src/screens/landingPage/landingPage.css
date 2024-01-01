@@ -5,14 +5,33 @@
   display: grid;
   grid-template-columns: 50vw 50vw;
 }
+
+.header{
+  font-size: larger;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  .login{
+    background-color: #25c6e5;
+    width: 20%;
+    height: 2rem;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 30%;
+    color: rgb(35, 23, 23);
+    place-items: center;
+  }
+}
+
 .main1 {
   border: 2px solid red;
   color: white;
 }
 
-.main12 {
+.main2 {
   border: 2px solid red;
 }
+
 
 .tagline {
   display: flex;
@@ -55,25 +74,27 @@
 .register {
   display: flex;
 }
-#countdown {
+.countdown {
   color: #25c6e5;
   text-shadow: 0px 0px 25px rgba(24, 182, 213, 0.62), 0px 0px 50px #30f;
   font-family: Armata;
-  font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 2rem 0rem 0rem 5rem;
+  margin-left: 5rem;
+  display: flex;
+}
+.time{
+  padding-right: 1.5rem;
+  text-align: center;
 }
 #registerBtn {
   color: #25c6e5;
   text-shadow: 0px 0px 25px rgba(24, 182, 213, 0.62), 0px 0px 50px #30f;
   font-family: Cedarville Cursive;
-  font-size: 60px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  position: relative;
-  left: 3rem;
-  top: -1.25rem;
+  margin: 2rem 0rem 0rem 5rem;
 }

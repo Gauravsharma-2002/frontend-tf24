@@ -9,13 +9,25 @@ import F from "../../images/F.png";
 //css file
 import "./landingPage.css";
 function LandingPage() {
+  const date = new Date();
+
+  let days = 94 - date.getDay();
+  let hours = 23 - date.getHours();
+  let mins = 60 - date.getMinutes();
+  let sec = date.getSeconds();
+
   return (
     <>
-      <img
-        src={techfest24}
-        alt=""
-        style={{ width: "250px", margin: 5, padding: 5 }}
-      />
+      <nav className="header">
+        <img
+          src={techfest24}
+          alt=""
+          style={{ width: "250px", margin: 5, padding: 5 }}
+          className="header logo"
+        />
+        <button className="header login">Login</button>
+      </nav>
+
       <div className="mainbody">
         <div className="main1">
           <section className="tagline">
@@ -37,7 +49,56 @@ function LandingPage() {
             boundaries of sustainability.
           </p>
           <div className="register">
-            <h2 id="countdown">00:00:00</h2>
+            <div className="countdown">
+              <div className="time">
+                <h2 style={{ fontSize: "2rem" }}>{days}</h2>
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    position: "relative",
+                    bottom: "10%",
+                  }}
+                >
+                  days
+                </p>
+              </div>
+              <div className="time">
+                <h2 style={{ fontSize: "2rem" }}>{hours}</h2>
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    position: "relative",
+                    bottom: "10%",
+                  }}
+                >
+                  hours
+                </p>
+              </div>
+              <div className="time">
+                <h2 style={{ fontSize: "2rem" }}>{mins}</h2>
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    position: "relative",
+                    bottom: "10%",
+                  }}
+                >
+                  minutes
+                </p>
+              </div>
+              <div className="time">
+                <h2 style={{ fontSize: "2rem" }}>{sec}</h2>
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    position: "relative",
+                    bottom: "10%",
+                  }}
+                >
+                  seconds
+                </p>
+              </div>
+            </div>
             <h2 id="registerBtn">Register Now</h2>
           </div>
         </div>

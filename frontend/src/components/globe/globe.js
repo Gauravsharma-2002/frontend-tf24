@@ -20,8 +20,7 @@ function Globe() {
         attach="material"
         color="#87CEEB"
         speed={1}
-        factor={0.6}
-        transparent
+        factor={0.6}  
         map={texture}
       />
     </mesh>
