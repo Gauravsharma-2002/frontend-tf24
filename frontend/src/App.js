@@ -72,6 +72,7 @@ function App() {
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/faq" element={<Faq />} />
+      
       </Routes>
       <Footer />
     </Router>
